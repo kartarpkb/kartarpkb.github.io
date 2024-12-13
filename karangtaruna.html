@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karang Taruna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <a class="logo" href="#">Karang Taruna <span>PKB</span></a>
+        <div class="navbar-nav">
+          <a href="#">Beranda</a>
+          <a href="#structure">Struktur Organisasi</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#program">Program</a>
+          <a href="#activities">Kegiatan</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+  <script>const navbarNav = document.querySelector(".navbar-nav");
+    // ketika hamburger menu diklik
+    document.querySelector("#hamburger-menu").onclick = (e) => {
+      navbarNav.classList.toggle("active");
+      e.preventDefault();
+    };</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const section = document.getElementById('structure');
+    
+            function checkVisibility() {
+                const rect = section.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+    
+                // Cek apakah section berada dalam viewport
+                if (rect.top < windowHeight && rect.bottom >= 0) {
+                    section.classList.add('visible');
+                }
+            }
+    
+            // Menjalankan fungsi saat halaman di-scroll
+            window.addEventListener('scroll', checkVisibility);
+            
+            // Cek saat halaman pertama kali dimuat
+            checkVisibility();
+        });
+    </script>
+
+   <!-- Hero Section -->
+<section id="home">
+    <div class="hero-content">
+        <img src="logo kartar pkb.png" alt="Logo Karang Taruna" class="logo">
+        <div class="hero-text">
+            <h2>Selamat Datang di Karang Taruna Pondok Kacang Barat</h2>
+            <p>Bersama membangun generasi muda yang lebih baik.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
+
+    <!-- Struktur Organisasi -->
+<section id="structure" class="section">
+    <div class="container">
+        <h1>Struktur Organisasi</h1>
+        <p>Masa Bakti 2024-2029</p>
+        <div class="structure-grid">
+            <div class="member">
+                 <!-- Anggota yang selalu terlihat -->
+                <img src="foto bang bagas.jpg" alt="Ketua">
+                <h3>Bagas Risky Setyowibowo S.Sos.</h3>
+                <p>Ketua</p>
+            </div>
+            <div class="member">
+                <img src="foto bang robin wakil.jpg" alt="Wakil Ketua">
+                <h3>Robin Abdillah</h3>
+                <p>Wakil Ketua</p>
+            </div>
+            <div class="member">
+                <img src="foto bang ary sekertaris.jpg" alt="Sekretaris 1 ">
+                <h3>Ari Wibowo</h3>
+                <p>Sekretaris 1 </p>
+            </div>
+            <div class="member">
+                <img src="foto ka deswita sekertaris 2.jpg" alt="Sekretaris 2 ">
+                <h3>Deswita Nasrofa</h3>
+                <p>Sekretaris 2</p>
+            </div>
+            <div class="member">
+                <img src="foto ka marsya bendahara.jpg" alt="Bendahara 1">
+                <h3>Marsya Eka Rosiani Putri S.Ak.</h3>
+                <p>Bendahara 1</p>
+            </div>
+            <div class="member">
+                <img src="bang prawira adi kusuma bendahara.jpg" alt="Bendahara 2">
+                <h3>Prawira Adi Kusuma</h3>
+                <p>Bendahara 2</p>
+            </div>
+            <div class="member">
+                <img src="foto bang andi.jpg" alt="Kabid. Lingkungan Hidup Dan Pariwisata">
+                <h3>Andi</h3>
+                <p>Kabid. Lingkungan Hidup Dan Pariwisata</p>
+            </div>
+            <div class="member">
+                <img src="foto bang arief.jpg" alt="Kabid. Humas,Publikasi Dan Pengembangan Komunikasi">
+                <h3>Arief Fadillah</h3>
+                <p>Kabid. Humas,Publikasi Dan Pengembangan Komunikasi</p>
+            </div>
+            <div class="member">
+                <img src="foto bang kalvin.jpg" alt="Kabid. Pengembangan Ekonomi Skala Kecil Dan Koperasi ">
+                <h3>Kalvin Cahyadi</h3>
+                <p>Kabid. Pengembangan Ekonomi Skala Kecil Dan Koperasi</p>
+            </div>
+            <div class="member">
+                <img src="foto ka shalsa.jpg" alt="Kabid. Pemberdayaan Perempuan ">
+                <h3>Shalsa Mauliddhina</h3>
+                <p>Kabid. Pemberdayaan Perempuan</p>
+            </div>
+            <div class="member">
+                <img src="foto bang deni.jpg" alt="Kabid. Kerohanian ">
+                <h3>Deni Sahputra</h3>
+                <p>Kabid. Kerohanian</p>
+            </div>
+            <div class="member">
+                <img src="foto bang fauzan.jpg" alt="Kabid. Advokasi,Hukum Dan HAM ">
+                <h3>Ahmad Fauzi</h3>
+                <p>Kabid. Advokasi,Hukum Dan HAM </p>
+            </div>
+            <div class="member">
+                <img src="foto bang adhi.jpg" alt="Kabid. Kesejahteraan Sosial">
+                <h3>Adipah</h3>
+                <p>Kabid. Kesejahteraan Sosial </p>
+            </div>
+            <div class="member">
+                <img src="foto bang imam.jpg" alt="Anggota ">
+                <h3>Imam Syifa Hidayat</h3>
+                <p>Anggota </p>
+            </div>
+            <div class="member">
+                <img src="foto ka mita.jpg" alt="Anggota ">
+                <h3>Mita Maulida</h3>
+                <p>Anggota </p>
+            </div>
+            <div class="member">
+                <img src="foto bang vian.jpg" alt="Anggota ">
+                <h3>Vian Prasetyo</h3>
+                <p>Anggota </p>
+            </div>
+            <div class="member">
+                <img src="foto ka nasya.jpg" alt="Anggota ">
+                <h3>Naasya Alya Anjani</h3>
+                <p>Anggota </p>
+            </div>
+            <div class="member">
+                <img src="foto bang rifky.jpg" alt="Anggota ">
+                <h3>Rizky Wahyudin</h3>
+                <p>Anggota </p>
+            </div>
+            <div class="member">
+                <img src="foto bang deri.jpg" alt="Anggota ">
+                <h3>Deri Septian</h3>
+                <p>Anggota </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Tentang Kami -->
+<section id="about" class="container">
+    <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>Karang Taruna adalah organisasi sosial kemasyarakatan yang berfungsi sebagai wadah pengembangan
+             generasi muda. Karang Taruna bergerak di bidang kesejahteraan sosial dan bertujuan untuk meningkatkan
+              dan mengembangkan potensi generasi muda: Mengembangkan kesadaran dan tanggung jawab sosial, Membentuk 
+              jiwa dan semangat kejuangan, Mengembangkan kemampuan dan potensi generasi muda, Menjalin toleransi dan 
+              persatuan, Mewujudkan kesejahteraan sosial.</p>
+        <h3>(Landasan Filosofis)</h3>
+        <p>Landasan Filosofis
+            Nama "Karang Taruna" berasal dari bahasa Jawa, yang berarti "tempat berkumpulnya para pemuda." Filosofi ini mencerminkan tujuan utama organisasi sebagai wadah bagi generasi muda untuk berkolaborasi, belajar, dan berkontribusi kepada masyarakat.
+            
+            Lambang Karang Taruna, yang terdiri dari padi, kapas, bintang, dan roda gigi, melambangkan prinsip dasar organisasi:
+            
+            Padi dan kapas: Kesejahteraan sosial dan kemakmuran.
+            Bintang: Nilai-nilai spiritual yang menjadi dasar perjuangan.
+            Roda gigi: Semangat kerja keras dan pembangunan.
+            Tujuan dan Peran Karang Taruna
+            Pemberdayaan Pemuda:
+            Memberikan pelatihan keterampilan, menciptakan lapangan kerja, dan mendorong kemandirian ekonomi.
+            
+            Pengabdian Sosial:
+            Membantu masyarakat kurang mampu melalui kegiatan gotong royong, bantuan sosial, dan pemberdayaan komunitas.
+            
+            Pengembangan Potensi Generasi Muda:
+            Meningkatkan kreativitas, jiwa kepemimpinan, dan rasa tanggung jawab sosial pemuda.
+            </p>
+    </div>
+    <div class="about-image">
+        <img src="hdlogo-karang-taruna-31372.png" alt="Ilustrasi Karang Taruna" />
+    </div>
+</div>
+</section>
+
+   <!-- Program Section -->
+<section id="program">
+    <div class="container">
+        <h2>Program Kami</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="pelantikan 1.jpg" alt="Program 1">
+                <h3>Program Pemberdayaan Masyarakat</h3>
+                <p>Program ini bertujuan untuk meningkatkan keterampilan dan pengetahuan masyarakat.</p>
+                
+            </div>
+            <div class="program-card">
+                <img src="PROGRAM PENGHIJAUAN.jpg" alt="Program 2">
+                <h3>Program Penghijauan</h3>
+                <p>Inisiatif untuk menjaga kelestarian lingkungan hidup melalui kegiatan pembersihan dan penghijauan.</p>
+                
+            </div>
+            <div class="program-card">
+                <img src="PROGRAM PELATIHAN BROADCASTING.jpg" alt="Program 3">
+                <h3>Program Pendidikan</h3>
+                <p>Menyediakan pelatihan dan seminar untuk meningkatkan pendidikan anak-anak dan remaja.</p>
+                
+            </div>
+            <div class="program-card">
+                <img src="PROGRAM PEMBERDAYAAN MITRA USAHA KECIL.jpg" alt="Program 4">
+                <h3>Program UMKM</h3>
+                <p>Kegiatan untuk meningkatkan Kapasitas Pada UMKM di Pondok Kacang Barat.</p>
+                
+            </div>
+            <div class="program-card">
+                <img src="PROGRAM PEMBINAAN KARANG TARUNA.jpg" alt="Program 4">
+                <h3>Program PEMBINAAN</h3>
+                <p>Kegiatan untuk meningkatkan Kapasitas Anggota Karang Taruna.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Kegiatan -->
+<section id="activities" class="activities-section">
+    <div class="activities-container">
+        <div class="activities-content">
+            <h2>Kegiatan Terbaru</h2>
+            <p>Kegiatan yang telah dilakukan oleh Karang Taruna.</p>
+            <ul>
+                <li>Gotong royong membersihkan lingkungan</li>
+                <li>Karnaval Se-Kelurahan</li>
+                <li>Maulid Nabi Muhammad SAW 2024</li>
+                <li>Podcast Tentang Komputer Dan Masyarakat</li>
+            </ul>
+        </div>
+        <div class="activities-video">
+            <iframe 
+                src="https://www.youtube.com/embed/6our1dxXfws?autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+   <!-- Galeri Section -->
+<section id="gallery">
+    <div class="container">
+        <h2>Galeri Kami</h2>
+        <div class="gallery-grid">
+            <img src="kegiatan maulid.jpg" alt="Kegiatan Maulid Nabi Muhammad SAW 2024" class="gallery-item" onclick="openModal(this)">
+            <img src="Kegiatan karnaval 1.jpg" alt="Foto Kegiatan karnaval 2024 Sekaligus Ulang tahun kelurahan Pondok Kacang Barat" class="gallery-item" onclick="openModal(this)">
+            <img src="kegiatan karnaval 2.jpg" alt="Foto Anggota Karang Taruna Memakai Seragam SMA" class="gallery-item" onclick="openModal(this)">
+            <img src="hdlogo-karang-taruna-31372.png" alt="Logo Karang Taruna Umum" class="gallery-item" onclick="openModal(this)">
+            <img src="LOGO kartar Pkb.jpg" alt="Logo Karang Taruna kelurahan Pondok Kacang Barat" class="gallery-item" onclick="openModal(this)">
+            <img src="pelantikan 1.jpg" alt="Foto Pelantikan Masa Bakti 2024-2029" class="gallery-item" onclick="openModal(this)">
+            <img src="kegiatan santunan anak yatim.jpg" alt="Santunan Anak Yatim Dan Janda 2024" class="gallery-item" onclick="openModal(this)">
+            <img src="pelantikan 2.jpg" alt="Foto Pelantikan Masa Bakti 2024-2029" class="gallery-item" onclick="openModal(this)">
+            <img src="pelantikan 3.jpg" alt="Foto Pelantikan Masa Bakti 2024-2029" class="gallery-item" onclick="openModal(this)">
+            <img src="pelantikan 4.jpg" alt="Foto Pelantikan Masa Bakti 2024-2029" class="gallery-item" onclick="openModal(this)">
+            <img src="kegiatan ldk kecamatan.jpg" alt="Foto Kegiatan LDK Kecamatan Pondok Aren 2024" class="gallery-item" onclick="openModal(this)">
+            <img src="kegiatan ldk kecamatan 2.jpg" alt="Foto Kegiatan LDK Kecamatan Pondok Aren 2024" class="gallery-item" onclick="openModal(this)">
+            <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal untuk Gambar Besar -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+</div>
+
+<script>
+    function openModal(img) {
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+    
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt; // Menampilkan deskripsi gambar
+    }
+    
+    function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+    </script>
+
+    <!-- Kontak Section -->
+<section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <!-- <p>Berikut adalah produk-produk jasa kami.</p> -->
+    <div class="row">
+      <div class="contact-content1">
+        <h3>Karang Taruna<span> PKB</span></h3>
+        <p>
+          Tertarik Bekerja Sama Dengan Kami?
+        </p>
+      </div>
+      <div class="contact-content2">
+        <h3>Hubungi Kami <span>disini</span></h3>
+        <div class="whatapp-icon">
+          <i class="ph ph-whatsapp-logo"></i>
+          <a href="https://wa.me/628988143210" target="_blank"
+            ><p>+628988143210</p></a
+          >
+        </div>
+        <div class="instagram-icon">
+          <i class="ph ph-instagram-logo"></i>
+          <a
+            href="https://www.instagram.com/karangtaruna.pkb/"
+            target="_blank"
+            ><p>@karangtaruna.pkb</p></a
+          >
+        </div>
+        <div class="email-icon">
+          <i class="ph-light ph-envelope"></i>
+          <a href="mailto:kaangtarunaPKB@gmail.com" target="_blank"
+            ><p>karangtarunaPKB@gmail.com</p></a
+          >
+        </div>
+        <div class="map-icon">
+          <i class="ph ph-map-pin"></i>
+          <a href="https://maps.app.goo.gl/Y2g3757Sa2GveaHk7" target="_blank">
+            <p class="alamat-contact">
+                Jl. AMD No.15-16, Pd. Kacang Bar., Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15226
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Karang Taruna. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>
